@@ -1,0 +1,21 @@
+Source: python-erlport
+Maintainer: Jakob Kemi <jakob@artilect.se>
+Section: python
+Priority: optional
+Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.8.4
+Vcs-Git: git://github.com/artilect/python-erlport.git
+
+Package: python-erlport
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+XB-Python-Version: ${python:Versions}
+Provides: ${python:Provides}
+Suggests: erlang-base | erlang-base-hipe
+Homepage: http://github.com/artilect/python-erlport, http://github.com/hdima/erlport, http://pypi.python.org/pypi/erlport/
+Description: Erlang port protocol
+ Erlang port protocol for Python
+ The erlport Python library implements `Erlang external term format
+ <http://www.erlang.org/doc/apps/erts/erl_ext_dist.html>`_ and `Erlang port
+ protocol <http://erlang.org/doc/man/erlang.html#open_port-2>`_ for easier
+ integration of Python and Erlang.
